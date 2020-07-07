@@ -353,6 +353,16 @@ final class ExposureManager: NSObject {
     }
   }
   
+  @objc func fetchLastDetectionDate(
+    resolve: @escaping RCTPromiseResolveBlock,
+    reject: @escaping RCTPromiseRejectBlock
+  ) {
+    guard let lastResetDate = BTSecureStorage.shared.userState.dateLastPerformedFileCapacityReset else {
+      reject(.detectionNeverPerformed, "No lastResetDate available", GenericError.unknown);
+      return
+    }
+    resolve(lastResetDate.posixRepresentation)
+  }
 }
 
 private extension ExposureManager {
