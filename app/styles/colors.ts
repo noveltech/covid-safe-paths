@@ -25,21 +25,18 @@ export const grayBlue = '#F8F8FF';
 export const porcelain = '#ecf0f1';
 
 // Reds
-export const red = '#ff0000';
-export const persimmon = '#ff5656';
+export const red = '#eb0000';
 export const emergencyRed = '#D00000';
 
 export const primaryRed = red;
 
 // Blues
 export const royalBlue = '#4051db';
-export const royalerBlue = '#5061e6';
 export const midnightBlue = '#161a25';
-export const cornflowerBlue = '#6979f8';
+export const cornflowerBlue = '#5061e6';
 
 export const primaryBlue = royalBlue;
 export const secondaryBlue = cornflowerBlue;
-export const tertiaryBlue = royalerBlue;
 
 // Greens
 export const shamrock = '#41dca4';
@@ -89,9 +86,7 @@ export const tertiaryBackground = lighterGray;
 export const quaternaryBackground = lightGray;
 
 export const invertedPrimaryBackground = primaryBlue;
-export const invertedSecondaryBackground = tertiaryBlue;
-export const invertedTertiaryBackground = secondaryBlue;
-export const invertedQuaternaryBackground = primaryBlue;
+export const invertedSecondaryBackground = secondaryBlue;
 export const surveyPrimaryBackground = grayBlue;
 
 export const bottomSheetBackground = white;
@@ -139,7 +134,7 @@ export const tertiaryHeaderText = tertiaryViolet;
 
 export const linkText = primaryViolet;
 export const linkTextInvert = amber;
-export const errorText = persimmon;
+export const errorText = primaryRed;
 
 // Forms
 export const formText = primaryText;
@@ -150,13 +145,6 @@ export const placeholderTextColor = lightGray;
 
 export const success = primaryGreen;
 export const warning = primaryYellow;
-
-// Gradients
-export const gradientStart = { x: 0, y: 0.25 };
-export const gradientEnd = { x: 1, y: 1 };
-export const primaryGradient = [primaryBlue, tertiaryBlue];
-export const secondaryGradient = [primaryBlue, secondaryBlue];
-export const disabledGradient = [darkGray, darkGray];
 
 // Onboarding
 export const onboardingIconYellow = champangne;
